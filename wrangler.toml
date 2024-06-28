@@ -12,15 +12,15 @@ TARGET_UPSTREAM = "https://registry-1.docker.io"
 
 [env.production]
 name = "cloudflare-docker-proxy"
-# routes = [
-#   { pattern = "docker.sun-panel.top", custom_domain = true },
-#   { pattern = "quay.sun-panel.top", custom_domain = true },
-#   { pattern = "gcr.sun-panel.top", custom_domain = true },
-#   { pattern = "k8s-gcr.sun-panel.top", custom_domain = true },
-#   { pattern = "k8s.sun-panel.top", custom_domain = true },
-#   { pattern = "ghcr.sun-panel.top", custom_domain = true },
-#   { pattern = "cloudsmith.sun-panel.top", custom_domain = true },
-# ]
+routes = [
+  { pattern = "docker.sun-panel.top", custom_domain = true },
+  { pattern = "quay.sun-panel.top", custom_domain = true },
+  { pattern = "gcr.sun-panel.top", custom_domain = true },
+  { pattern = "k8s-gcr.sun-panel.top", custom_domain = true },
+  { pattern = "k8s.sun-panel.top", custom_domain = true },
+  { pattern = "ghcr.sun-panel.top", custom_domain = true },
+  { pattern = "cloudsmith.sun-panel.top", custom_domain = true },
+]
 
 [env.production.vars]
 MODE = "production"
